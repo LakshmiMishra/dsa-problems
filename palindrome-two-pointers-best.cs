@@ -18,7 +18,7 @@ namespace HelloWorld
 	   string s= "A man, a plan, a canal: Panama";
 	   //Remove all the non alpha numeric characters from the string first
 	   
-	   string result = Regex.Replace(s, "[^a-zA-Z]", String.Empty);
+	   string result = Regex.Replace(s, "[^a-zA-Z0-9]", String.Empty);
         int n=result.Length;
         int ei=n-1;
         int si=0;
