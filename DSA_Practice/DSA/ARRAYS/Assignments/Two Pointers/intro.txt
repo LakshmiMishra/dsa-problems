@@ -1,0 +1,47 @@
+TWO POINTER TECHNIQUE
+Two pointer technique is an approach where we use two indices to traverse data (usually arrays or strings) to reduce time complexity from O(n²) to O(n).
+Pointers can move:
+•	In the same direction
+•	In opposite directions
+________________________________________
+1. SAME DIRECTION TWO POINTERS
+Also called:
+•	Fast & Slow pointer
+•	Expand window
+•	Partition logic
+•	Sliding window base
+Pattern:
+left = 0
+for right in array:
+    move right forward
+    sometimes move left forward
+Used for:
+•	Removing duplicates
+•	Partitioning
+•	Sliding window problems
+•	Longest substring problems
+•	Rearranging arrays
+
+
+----------------------------------------------------
+
+
+
+2. OPPOSITE DIRECTION TWO POINTERS
+Also called:
+•	Left–Right pointer
+•	Converging pointers
+•	Meet in the middle
+Pattern:
+left = 0
+right = n - 1
+
+while (left < right):
+    move left++
+    move right--
+Used for:
+•	Sorted arrays
+•	Pair sum problems
+•	Palindrome checks
+•	Reversals
+•	3Sum base logic
