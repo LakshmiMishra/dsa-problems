@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+//remove duplicates using Dictionary or hash set
+		  int[] arr={1,0,3,4,0,6,0,4};
+		 // Dictionary<int,int> dic=new Dictionary<int,int>();
+		  HashSet<int> hash=new HashSet<int>();
+		  
+		  for(int fast=0;fast<arr.Length;fast++){
+		    
+		  // if(!dic.ContainsKey(arr[fast]))
+		  // dic.Add(arr[fast],fast);
+		    
+		 
+		    if(!hash.Contains(arr[fast]))
+		  hash.Add(arr[fast]);
+		    
+		  }
+		// foreach(KeyValuePair<int,int> item in dic){
+		  
+		//   Console.Write(item.Key+" ");
+		// }
+		foreach(var item in hash){
+		  
+		  Console.Write(item+" ");
+		}
+	
+		}
+	
+	}
+}
