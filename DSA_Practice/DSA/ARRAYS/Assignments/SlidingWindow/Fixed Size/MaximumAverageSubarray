@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+	int[] arr={3,3,4,3,0};
+	int k=3;
+	double maxAvg=FindMaxAverage(arr,k);
+	Console.Write(maxAvg);
+		}
+		
+
+    public static double FindMaxAverage(int[] nums, int k) {
+        int n=nums.Length;
+        //Fixed size sliding window problem
+     double maxAvg=0.00000;
+        if(n >=k){
+            //find first window sum
+            double firstWindowSum=0;
+            for(int i=0;i<k;i++){
+                firstWindowSum+=nums[i];
+            }
+           maxAvg=firstWindowSum/k;
+        for(int i=k;i<n;i++){
+             firstWindowSum+=nums[i]-nums[i-k];
+          
+          double curAvg=(double)firstWindowSum/k;
+            maxAvg=Math.Max(maxAvg,curAvg);
+            
+        }
+      
+    }
+      return maxAvg;
+    }
+}
+	}
