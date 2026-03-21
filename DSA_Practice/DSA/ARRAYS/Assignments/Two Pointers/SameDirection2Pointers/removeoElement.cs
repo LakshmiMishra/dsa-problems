@@ -18,8 +18,8 @@ namespace HelloWorld
 // 2
 
 		
-			  int[] nums = { 3, 2, 2, 3 };
-    int k = RemoveElement(nums, 3);
+			  int[] nums = { 2, 2, 4,2, 3 ,5};
+    int k = RemoveElement(nums, 2);
     Console.WriteLine($"k = {k}");
 		}
 		 public static int RemoveElement(int[] nums, int val) {
@@ -30,12 +30,15 @@ namespace HelloWorld
             // If the current element is not the value to be removed
             if (nums[i] != val) {
                 // Place the current element at the 'k' position
-                nums[k] = nums[i];
+                 nums[k] = nums[i];
                 // Move 'k' forward to the next available position
                 k++; 
             }
+        }  Console.Write("[");
+        for(int i=0;i<k;i++){
+          Console.Write(nums[i]+" ");
         }
-        
+        Console.Write("]");
         // 'k' now represents the number of elements not equal to 'val'
         // and also the length of the modified array's relevant part.
         return k;
