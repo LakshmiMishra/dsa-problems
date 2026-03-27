@@ -11,7 +11,9 @@ namespace HelloWorld
 		{
 // 9. Smallest Subarray with Sum Greater Than or Equal to K
 // Problem Statement:
-// Given an array of positive integers and an integer K, find the minimum length of a contiguous subarray whose sum is greater than or equal to K.
+// Given an array of positive integers and an integer K,
+// find the minimum length of a contiguous subarray whose 
+//sum is greater than or equal to K.
 // Input:
 // Array = [2, 1, 5, 2, 3, 2]
 // K = 7

@@ -12,7 +12,8 @@ namespace HelloWorld
 // . Longest Subarray with Sum Less Than or Equal to K
 // Problem Statement:
 // You are given an array of positive integers and an integer K. 
-//Find the length of the longest contiguous subarray whose sum of elements is less than or equal to K.
+//Find the length of the longest contiguous subarray 
+//whose sum of elements is less than or equal to K.
 // Input:
 // Array = [2, 1, 5, 1, 3, 2]
 // K = 7
