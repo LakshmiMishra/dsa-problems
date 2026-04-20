@@ -9,14 +9,15 @@ namespace HelloWorld
 	{
 		public static void Main(string[] args)
 		{  
-            Console.WriteLine("Enter the number to find Fibonacci: ");
-            int k= Convert.ToInt32(Console.ReadLine());                                                                                                                                                                                             
-		  int n=findFibbo(k);
-		  Console.Write("Fibbonacci for {0} is {1}",k,n);
+                                                                                                                                      
+		  int n=findFibbo(6);
+		  Console.Write("Fibbonacci for {0} is {1}",6,n);
 	
 			
 		}
 		static int findFibbo(int n){
+		  if(n<=1)
+		  return n;
 		  		int[] F= new int[n+1];
 		  		F[0]=0;
 		  		F[1]=1;
