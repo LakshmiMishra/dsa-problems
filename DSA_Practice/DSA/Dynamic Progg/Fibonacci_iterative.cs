@@ -8,9 +8,11 @@ namespace HelloWorld
 	public class Program
 	{
 		public static void Main(string[] args)
-		{                                                                                                                                                                                               
-		  int n=findFibbo(6);
-		  Console.Write("Fibbonacci for {0} is {1}",6,n);
+		{  
+            Console.WriteLine("Enter the number to find Fibonacci: ");
+            int k= Convert.ToInt32(Console.ReadLine());                                                                                                                                                                                             
+		  int n=findFibbo(k);
+		  Console.Write("Fibbonacci for {0} is {1}",k,n);
 	
 			
 		}
